@@ -4,48 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/list.css"> -->
     <title>Lista de Tarefas</title>
 </head>
 <body>
-    <header>
-         <div class="hero">
-            <div class="logo">
-                 <img src="img/novo_logo_ms-removebg-preview.png" alt="Logo">
+    <div class="layout">
+        <header class="header">
+            <div class="content">
+                <div class="message-container" id="message"></div>
             </div>
-            <div class="container-title">
-                <h2>Organize suas tarefas de forma eficiente</h2>
-                <p>Adicione, conclua e gerencie suas tarefas diárias com facilidade.</p>
+            <div class="hero">
+                <div class="logo">
+                    <img src="img/novo_logo_ms-removebg-preview.png" alt="Logo">
+                </div>
+                <div class="container-title">
+                    <h2>Organize suas tarefas de forma eficiente</h2>
+                    <p>Adicione, conclua e gerencie suas tarefas diárias com facilidade.</p>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <div class="content">
-        <div class="message-container" id="message"></div>
+        <main class="main">
+           <section class="task-list">      
+                <h1>Lista de Tarefas</h1>
+                <div class="add-task">
+                    <input type="text" placeholder="Digite uma nova tarefa..." id="task-input">
+                    <button id="add-button">Adicionar</button>
+                </div>
+                <div class="list">
+                    <ul id="to-do-list">
+                        <!-- Tarefas inseridas dinamicamente pelo JS -->
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Lista de Tarefas. Todos os direitos reservados.</p>
+        </footer>
     </div>
 
-    <main>
-       <section class="task-list">      
-            <h1>Lista de Tarefas</h1>
-            <div class="add-task">
-                <input type="text" placeholder="Digite uma nova tarefa" id="task-input">
-                <button id="add-button">Adicionar</button>
-            </div>
-            <div class="list">
-                <ul id="to-do-list">
-                    
-                </ul>
-            </div>
-        </section>
-        
-    </main>
-    <footer>
-        <p>&copy; 2023 Lista de Tarefas. Todos os direitos reservados.</p>
-    </footer>
-
-
-
-    <!-- <script src="js/lista.js"></script> -->
     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
